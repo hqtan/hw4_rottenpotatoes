@@ -22,6 +22,12 @@ module NavigationHelpers
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
 
+    when /^the edit page for "(.+)"$/
+      movie = $1
+      debugger
+      movieId = Movie.find_by_title(movie).id
+      "#{movies_path}/#{movieId}/edit"
+
     else
       begin
         page_name =~ /^the (.*) page$/
