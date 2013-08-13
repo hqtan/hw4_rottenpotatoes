@@ -14,6 +14,7 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'simplecov'
+  gem 'ZenTest', '4.8.2'
 end
 
 group :test do
@@ -45,4 +46,6 @@ gem 'jquery-rails'
 # To use debugger
 gem 'haml'
 
+# The ruby-tmdb gem
+gem 'ruby-tmdb'
 
